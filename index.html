@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>THE MOMENT</title>
+  <meta name="description" content="There is only one correct second. Find the moment." />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+  <!-- ✅ AdSense: uncomment after approval + replace ca-pub-XXXX -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
+  -->
+</head>
+
+<body>
+  <div class="modal" id="introModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal__eyebrow">ATTENTION</div>
+      <div class="modal__title" id="modalTitle">Patience is an invaluable virtue.</div>
+      <div class="modal__text">
+        There is only one correct second.<br>
+        Most people click too late.
+      </div>
+
+      <div class="modal__actions">
+        <button class="button ghost" id="modalMaybeBtn" type="button">I’ll wait.</button>
+        <button class="button" id="modalOkBtn" type="button">Begin</button>
+      </div>
+
+      <div class="modal__fineprint">
+        Tip: press <b>Space</b> to click.
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- Top Ad slot -->
+    <div class="ad" aria-label="Advertisement">
+      <div class="label">Advertisement</div>
+
+      <!-- ✅ AdSense unit (TOP). Replace data-ad-client & data-ad-slot, then uncomment. -->
+      <!--
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-XXXXXXXXXXXX"
+        data-ad-slot="YYYYYYYYYY"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+
+      <div class="small">Ad slot (top). Keep it subtle.</div>
+    </div>
+
+    <div class="card">
+      <div class="topbar">
+        <div class="brand">
+          <div class="title">THE MOMENT</div>
+          <div class="tag">Click at the exact second.</div>
+        </div>
+        <div class="meta">
+          <div class="pill" id="modePill">INTRO</div>
+          <div class="pill">English • Web</div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="stage">
+          <div class="story" id="story"></div>
+
+          <div class="center">
+            <button class="button" id="mainBtn">BEGIN</button>
+
+            <div class="subrow">
+              <button class="button ghost" id="howBtn" type="button">HOW IT WORKS?</button>
+              <button class="button ghost" id="resetBtn" type="button">RESET</button>
+            </div>
+
+            <!-- ✅ Share buttons (hidden until WIN) -->
+            <div class="subrow" id="shareButtons" style="display:none">
+              <button class="button ghost" id="shareXBtn" type="button">Share on X</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="side">
+          <h3>FEEDBACK</h3>
+          <div class="hintbox" id="feedbackBox">Waiting.</div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="k">Attempts</div>
+              <div class="v" id="attempts">0</div>
+            </div>
+            <div class="stat">
+              <div class="k">Best (closest)</div>
+              <div class="v" id="best">—</div>
+            </div>
+          </div>
+
+          <div class="hintbox" id="shareBox">
+            Share (after you win):
+            \n- “There is only one correct second.”
+            \n- “I was off by ____ seconds.”
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="small">
+          Tip: full-screen your browser. Use SPACE or click. (Timer is hidden on purpose.)
+        </div>
+        <div class="small">
+          <a href="#" id="copyLink">Copy share text</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Ad slot -->
+    <div class="ad" aria-label="Advertisement">
+      <div class="label">Advertisement</div>
+
+      <!-- ✅ AdSense unit (BOTTOM). Replace & uncomment. -->
+      <!--
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-XXXXXXXXXXXX"
+        data-ad-slot="ZZZZZZZZZZ"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+
+      <div class="small">Ad slot (bottom). Avoid popups at launch.</div>
+    </div>
+
+  </div>
+
+  <div class="toast" id="toast">Copied.</div>
+
+  <script defer src="./main.js"></script>
+</body>
+</html>
